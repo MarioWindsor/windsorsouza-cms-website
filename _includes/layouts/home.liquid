@@ -1,0 +1,238 @@
+{% include 'parts/header.liquid' %}
+
+		<!-- Header Section -->
+		<section class="header-section">
+			<div class="container">
+				<div class="row text-center space-50-top-bottom">
+					<div class="logo columns small-8 medium-6 large-4 xlarge-3">
+						<a class="inline-block" href="/">
+							<img src="media/logo-black.png">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="navigation columns small-12 text-center">
+						<a class="h6 strong space-min-top-bottom inline-block" style="margin-right: var(--space-25); margin-left: var(--space-25);" href="/">Services</a>
+						<a class="h6 strong space-min-top-bottom inline-block" style="margin-right: var(--space-25); margin-left: var(--space-25);" href="/">Contact Us</a>
+						<a class="h6 strong space-min-top-bottom inline-block" style="margin-right: var(--space-25); margin-left: var(--space-25);" href="/">Portfolio</a>
+						<a class="h6 strong space-min-top-bottom inline-block" style="margin-right: var(--space-25); margin-left: var(--space-25);" href="/">About Us</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Header Section -->
+
+
+		<!-- Intro Section -->
+		<section class="intro-section fill-dark">
+			<div class="container">
+				<div class="row text-center space-200-top-bottom">
+					<div class="columns small-10 medium-8 large-7 xlarge-5">
+						<div class="h1 space-25-bottom">Welcome to Our Design Collective</div>
+						<div class="h6">We build brands and help grow businesses through designed solutions, that gives them a competitive edge. A brand strategy and design collective out of Bangalore, India.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Intro Section -->
+			
+
+<style type="text/css">
+.services-section {
+	counter-reset: service-counter;
+	position: relative;
+}
+
+.services-section .service {
+	counter-increment: service-counter;
+	position: relative;
+}
+
+.services-section .service .content {
+	position: relative;
+	width: calc( var(--space-100) * 6 );
+}
+
+.services-section .service .content:before {	
+	content: counter(service-counter) ".";
+	display: inline-block;
+	font-size: calc( var(--space-75) * 0.75 );
+	position: absolute;
+	font-weight: 700;
+	background-color: var(--neutral-3);
+	text-align: center;
+	width: var(--space-150);
+	height: var(--space-150);
+	line-height: var(--space-150);
+	border-radius: var(--space-150);
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	opacity: 0.35;
+	top: var(--space-50);
+	left: calc(var(--space-25)*-1);
+
+}
+
+.services-section .service .thumbnail {
+	position: relative;
+	width: 100%;
+	padding-top: 50%;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	border-radius: var(--space-min);
+}
+
+@media( min-width: 640px )  {
+	.services-section .service .content {
+		width: calc( var(--space-100) * 10 );
+		margin-left: var(--space-100);
+	}
+}
+
+@media( min-width: 1040px ) {
+	.services-section .service .content {
+		width: calc( var(--space-100) * 6 );
+		margin-left: var(--space-50);
+	}
+
+	.services-section .service .content:before {	
+		font-size: calc( var(--space-50) * 0.75 );
+		width: var(--space-100);
+		height: var(--space-100);
+		line-height: var(--space-100);
+		border-radius: var(--space-100);
+	}
+
+	.services-section .service .thumbnail {
+		position: absolute;
+		width: calc( var(--space-100) * 5 );
+		padding-top: 0;
+		top: var(--space-50);
+		bottom: var(--space-50);
+		right: 0;
+	}
+
+	.services-section .service:nth-child(2n) .content {
+		margin-left: calc( var(--space-100) * 6 );
+	}
+
+	.services-section .service:nth-child(2n) .thumbnail {
+		right: auto;
+		left: 0;
+	}
+}
+</style>
+
+		<!-- Services Section -->
+		<section class="services-section">
+			<div class="container">
+				<div class="row text-center">
+					<div class="columns small-12 space-50-top-bottom">
+						<div class="h1 strong">Our Services</div>
+					</div>
+				</div>
+				{% for service in collections.service %}
+				<div class="row service space-50-top-bottom">
+					<div class="thumbnail inline-block" style="background-image: url('{{ service.data.image }}');"></div>
+					<div class="content inline-block space-25-top-bottom">
+						<div class="h6 strong text-neutral-4 space-min-bottom">{{ service.data.heading }}</div>
+						<div class="h3 strong space-min-bottom">{{ service.data.title }}</div>
+						<div class="h6 space-25-bottom">{{ service.data.description }}</div>
+						<a href="{{ service.url }}" class="inline-block button">Get a Quote</a>
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+		</section>
+		<!-- END: Services Section -->
+
+
+		<!-- Contact Section -->
+		<section class="contact-section fill-dark">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12">
+					</div>
+				</div>
+				<div class="row">
+					<div class="columns small-12 large-7 large-offset-4 space-50-top-bottom">
+						<div class="form" style="width: 100%; height: 1200px;">
+							<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScLoEOmDSN1STk2JgauQx6uiSPEfDCBfVs_T2VuDrar0beQrQ/viewform?embedded=true" width="100%" height="1200" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Contact Section -->
+
+
+		<!-- Portfolio Section -->
+		<section class="portfolio-section">
+			<div class="container">
+				<div class="row text-center space-50-top-bottom">
+					<div class="columns small-11 medium-10 large-9 xlarge-7">
+						<div class="h1 strong space-50-bottom">Portfolio</div>
+						<div class="h6"><p>At Windsor & Souza, we take immense pride in the stories we've crafted for our clients. Our work is a testament to our creative prowess, innovation, and commitment to delivering exceptional results. Each project at our design studio is a unique journey, an opportunity to shape brands and create memorable experiences. Whether it's a logo design, a captivating product catalog, a website that stands out, or any other service we offer, our portfolio reflects our dedication to excellence and our ability to make brands shine. Discover the diverse range of projects that have left a lasting impact, driven by our passion for exceptional brand narratives. Each project is a chapter in our story, and we invite you to explore them.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Portfolio Section -->
+
+
+		<!-- About Section -->
+		<section class="about-section">
+			<div class="container">
+				<div class="row text-center space-50-top-bottom">
+					<div class="columns small-11 medium-10 large-9 xlarge-7">
+						<div class="h1 strong space-50-bottom">About Us</div>
+						<div class="h6">With over 15 years of experience, Mario Windsor, a seasoned designer and branding expert, has left an indelible mark on the design and advertising landscape. He is passionate about crafting visual identities that transcend time. Alongside him, Marian D'Souza, a seasoned content producer and strategist for over 14 years, brings creative visions to life. His expertise in all things production, coupled with a keen eye for product and lifestyle photography, ensures your brand's narrative is rich and resonant. Together, we are your partners in crafting exceptional and impactful brand stories.</div>
+					</div>
+				</div>
+				<div class="row space-50-top-bottom">
+					<div class="columns small-12 large-5"><img class="block" style="border-radius: var(--space-min);" src="https://place-hold.it/500x500"></div>
+					<div class="columns small-12 large-6 large-offset-1 space-25-top-bottom">
+						<div class="h6 strong space-min-bottom">Meet the Visionary Designer</div>
+						<div class="h3 strong space-25-bottom">Mario Windsor</div>
+						<div class="h6">Mario Windsor, a seasoned designer and branding expert, boasts a rich tapestry of experience spanning 15 years. His creative prowess has left an indelible mark in the world of branding, and his love for storytelling through design has made him a sought-after visionary. Mario's mission is to reveal the essence of a brand through innovative design.</div>
+					</div>
+				</div>
+				<div class="row space-50-top-bottom">
+					<div class="columns small-12 large-5"><img class="block" style="border-radius: var(--space-min);" src="https://place-hold.it/500x500"></div>
+					<div class="columns small-12 large-6 large-offset-1 space-25-top-bottom">
+						<div class="h6 strong space-min-bottom">Meet the Creative Producer</div>
+						<div class="h3 strong space-25-bottom">Marian D'Souza</div>
+						<div class="h6">Marian D'Souza, a content producer and strategist, matches Mario's experience stride for stride. With a career spanning 14 years, Marian has worked on diverse projects, making a lasting impact on both corporate and creative endeavors. His expertise extends to video production, enriched by a profound talent for product and lifestyle photography.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: About Section -->
+
+
+		<!-- Sample Section -->
+		<section class="sample-section hidden">
+			<div class="container">
+				<div class="row">
+					<div class="columns small-12">
+						<div class="h3 space-50-top space-min-bottom">Typography:</div>
+						<div class="h1">Kontent</div>
+						<div class="h2">Kontent</div>
+						<div class="h3">Kontent</div>
+						<div class="h4">Kontent</div>
+						<div class="h5">Kontent</div>
+						<div class="h6">Kontent</div>
+						<div class="p">Kontent</div>
+						<div class="label">Kontent</div>
+						<div class="small">Kontent</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END: Sample Section -->
+
+
+
+{% include 'parts/footer.liquid' %}
