@@ -10,6 +10,6 @@ description: >-
   design principles and years of experience, we create logos that are not only
   visually appealing but also emotionally engaging. The logos we craft resonate
   with your audience and sets your brand apart from the competition.
-image: /media/uploads/stock-1.jpg
+image: /media/uploads/logo-design-1.jpg
 ---
 
