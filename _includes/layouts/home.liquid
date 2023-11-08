@@ -137,9 +137,9 @@
 					<div class="thumbnail inline-block" style="background-image: url('{{ service.data.image }}');"></div>
 					<div class="content inline-block space-25-top-bottom">
 						<div class="h6 strong text-neutral-4 space-min-bottom">{{ service.data.heading }}</div>
-						<div class="h3 strong space-min-bottom">{{ service.data.title }}</div>
+						<div class="h3 strong space-min-bottom"><a href="{{ service.url }}" class="inline-block">{{ service.data.title }}</a></div>
 						<div class="h6 space-25-bottom">{{ service.data.description }}</div>
-						<a href="{{ service.url }}" class="inline-block button">Get a Quote</a>
+						<a href="{{ service.url }}" class="inline-block button">Learn More</a>
 					</div>
 				</div>
 				{% endfor %}
