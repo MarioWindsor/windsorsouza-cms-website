@@ -5,7 +5,7 @@ tags:
   - service
 heading: Services CMS Sample Heading
 description: Services CMS Sample Description
-image: /uploads/stock-1.jpg
+image: /media/uploads/stock-1.jpg
 content: Services CMS Sample Heading
 ---
 
