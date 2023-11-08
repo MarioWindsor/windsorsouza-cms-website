@@ -12,6 +12,6 @@ description: >-
   to ensure consistency and coherence. With our team of seasoned design
   strategists, we'll help you create a brand identity that reflects your core
   values and connects with your target audience on a profound level.
-image: /media/uploads/stock-1.jpg
+image: /media/uploads/brand-identity-1.jpg
 ---
 
