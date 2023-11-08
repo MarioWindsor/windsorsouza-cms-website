@@ -12,6 +12,6 @@ description: >-
   label, or container, our team of expert designers can transform it into a
   canvas that narrates your brand's story. Our packaging not only grabs
   attention but also leaves a memorable imprint on your customers.
-image: /media/uploads/stock-1.jpg
+image: /media/uploads/package-design-1.jpg
 ---
 
