@@ -14,5 +14,9 @@ description: >-
   conversions. We're not just about keyword rankings; we're about enhancing your
   brand's online presence, authority, and revenue.
 image: /media/uploads/e-commerce-1.jpg
+content: >-
+  Resolve website issues, craft compelling conversion-driven content, and
+  uncover high ranking keywords to target with our comprehensive SEO Overhaul.
+  Drive increased traffic to your site and outperform the competition
 ---
 
