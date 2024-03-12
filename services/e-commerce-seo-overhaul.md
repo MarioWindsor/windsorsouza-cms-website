@@ -17,6 +17,14 @@ image: /media/uploads/e-commerce-1.jpg
 content: >-
   Resolve website issues, craft compelling conversion-driven content, and
   uncover high ranking keywords to target with our comprehensive SEO Overhaul.
-  Drive increased traffic to your site and outperform the competition
+  Drive increased traffic to your site and outperform the competition.
+
+
+  ## Get Started now
+
+
+  Resolve website issues, craft compelling conversion-driven content, and
+  uncover high ranking keywords to target with our comprehensive SEO Overhaul.
+  Drive increased traffic to your site and outperform the competition.
 ---
 
